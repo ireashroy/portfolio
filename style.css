@@ -1,0 +1,230 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f5f1; /* Soft light beige */
+  color: #4a4a4a; /* Dark slate gray */
+  line-height: 1.7;
+  padding: 0 15px;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+  color: #333; /* Slightly darkened text for contrast */
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+}
+
+/* Links */
+a {
+  color: #9b7cb8; /* Muted rose */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #7f5a9a; /* Slightly darker rose */
+}
+
+/* Header */
+header {
+  background-color: #6e4f77; /* Deep mauve */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color:#f9f5f1;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.3rem;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: justify; /* Justify the text */
+  font-style: italic;
+}
+
+
+/* Carousel */
+#carousel {
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+#carousel h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-family: 'Merriweather', serif;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.carousel-item {
+  width: 280px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Section Titles */
+section h2 {
+  color: #9b7cb8; /* Soft lavender */
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+}
+
+/* Sections */
+section {
+  padding: 70px 20px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact ul {
+  padding-left: 25px;
+}
+
+#contact li {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+#contact a {
+  font-weight: bold;
+  color: #9b7cb8; /* Muted rose */
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #7f5a9a; /* Darker rose */
+}
+
+/* About Me Section */
+#about-me {
+  background-color: #fafafa; /* Light grayish background */
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#about-me div {
+  margin-bottom: 35px;
+}
+
+#about-me h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+#about-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#about-me ul li {
+  margin-bottom: 12px;
+}
+
+/* Digital Skills Section */
+#digital-skills div {
+  margin-bottom: 25px;
+}
+
+#digital-skills h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #9b7cb8; /* Soft lavender */
+}
+
+/* Footer */
+footer {
+  background-color: #6e4f77; /* Deep mauve */
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+footer p {
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header p {
+      font-size: 1.1rem;
+  }
+
+  .carousel-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #contact ul {
+      padding-left: 0;
+  }
+
+  #contact li {
+      font-size: 1rem;
+  }
+
+  #about-me p,
+  #about-me li {
+      font-size: 1.1rem;
+  }
+
+  section {
+      padding: 50px 20px;
+  }
+}
